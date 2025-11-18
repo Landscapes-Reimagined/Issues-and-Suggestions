@@ -1,4 +1,3 @@
-
 name: "Discord Suggestion"
 description: "Suggest improvements for the Discord server."
 title: "[Discord Suggestion] <short summary>"
@@ -6,12 +5,10 @@ labels:
   - "Type: Suggestion"
   - "Area: Discord"
   - "Status: Needs Triage"
-
 body:
   - type: markdown
     attributes:
       value: "## Discord Suggestion"
-
   - type: dropdown
     id: suggestion_type
     attributes:
@@ -23,10 +20,7 @@ body:
         - "Other"
     validations:
       required: true
-
   - type: textarea
     id: details
     attributes:
       label: Details
-    validations:
-      required: true

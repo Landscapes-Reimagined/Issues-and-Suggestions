@@ -1,17 +1,14 @@
-
 name: "Modpack Suggestion"
-description: "Suggest additions or changes to a modpack."
+description: "Suggest improvements for a modpack."
 title: "[Modpack Suggestion] <short summary>"
 labels:
   - "Type: Suggestion"
   - "Area: Modpack"
   - "Status: Needs Triage"
-
 body:
   - type: markdown
     attributes:
       value: "## Modpack Suggestion"
-
   - type: dropdown
     id: project_label
     attributes:
@@ -22,7 +19,6 @@ body:
         - "Project: Landscapes Reimagined - Genesis"
     validations:
       required: true
-
   - type: dropdown
     id: suggestion_type
     attributes:
@@ -35,10 +31,7 @@ body:
         - "Other"
     validations:
       required: true
-
   - type: textarea
-    id: suggestion_details
+    id: details
     attributes:
-      label: Suggestion Details
-    validations:
-      required: true
+      label: Details

@@ -1,17 +1,14 @@
-
 name: "Mod Suggestion"
-description: "Suggest changes or additions to a specific mod."
+description: "Suggest changes to a mod."
 title: "[Mod Suggestion] <mod name> - <short summary>"
 labels:
   - "Type: Suggestion"
   - "Area: Mod"
   - "Status: Needs Triage"
-
 body:
   - type: markdown
     attributes:
       value: "## Mod Suggestion"
-
   - type: dropdown
     id: project_label
     attributes:
@@ -23,7 +20,6 @@ body:
         - "Project: Resource Vents"
     validations:
       required: true
-
   - type: dropdown
     id: suggestion_type
     attributes:
@@ -35,10 +31,7 @@ body:
         - "Other"
     validations:
       required: true
-
   - type: textarea
     id: details
     attributes:
       label: Details
-    validations:
-      required: true

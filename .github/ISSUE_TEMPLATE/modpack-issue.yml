@@ -1,4 +1,3 @@
-
 name: "Modpack Issue"
 description: "Report a problem with a modpack."
 title: "[Modpack Issue] <short summary>"
@@ -6,12 +5,10 @@ labels:
   - "Type: Bug"
   - "Area: Modpack"
   - "Status: Needs Triage"
-
 body:
   - type: markdown
     attributes:
       value: "## Modpack Issue Report"
-
   - type: dropdown
     id: project_label
     attributes:
@@ -22,7 +19,6 @@ body:
         - "Project: Landscapes Reimagined - Genesis"
     validations:
       required: true
-
   - type: dropdown
     id: subtype_label
     attributes:
@@ -35,18 +31,11 @@ body:
         - "Other"
     validations:
       required: true
-
   - type: input
-    id: modpack_version
+    id: version
     attributes:
       label: Modpack Version
-      placeholder: "e.g. 2.5.3"
-    validations:
-      required: true
-
   - type: textarea
     id: description
     attributes:
       label: Description
-    validations:
-      required: true
