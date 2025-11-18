@@ -1,0 +1,86 @@
+# .github/labeler.yml
+# Used by github/issue-labeler to auto-label issues based on Issue Form selections.
+# The dropdown values in your forms are already the label strings (e.g. "bug:texture"),
+# so we just match those exact strings in the issue body.
+
+# -----------------------------
+# BUG SUBTYPES
+# -----------------------------
+bug:texture:
+  - 'bug:texture'
+
+bug:recipe:
+  - 'bug:recipe'
+
+bug:crash:
+  - 'bug:crash'
+
+bug:quest:
+  - 'bug:quest'
+
+bug:other:
+  - 'bug:other'
+
+
+# -----------------------------
+# SUGGESTION SUBTYPES
+# -----------------------------
+suggestion:texture:
+  - 'suggestion:texture'
+
+suggestion:recipe:
+  - 'suggestion:recipe'
+
+suggestion:feature:
+  - 'suggestion:feature'
+
+suggestion:quest:
+  - 'suggestion:quest'
+
+suggestion:channel:
+  - 'suggestion:channel'
+
+suggestion:layout:
+  - 'suggestion:layout'
+
+suggestion:supporter-benefit:
+  - 'suggestion:supporter-benefit'
+
+suggestion:other:
+  - 'suggestion:other'
+
+
+# -----------------------------
+# PROJECT LABELS – MODPACKS
+# -----------------------------
+project:Create - Forge Frontier:
+  - 'project:Create - Forge Frontier'
+
+project:Create - Industrial Skies:
+  - 'project:Create - Industrial Skies'
+
+project:Landscapes Reimagined - Genesis:
+  - 'project:Landscapes Reimagined - Genesis'
+
+
+# -----------------------------
+# PROJECT LABELS – MODS
+# -----------------------------
+project:Forge Frontier Core:
+  - 'project:Forge Frontier Core'
+
+project:Create Bigger Storage:
+  - 'project:Create Bigger Storage'
+
+project:Dreams and Desires:
+  - 'project:Dreams and Desires'
+
+project:Resource Vents:
+  - 'project:Resource Vents'
+
+
+# -----------------------------
+# PROJECT LABEL – DISCORD
+# -----------------------------
+project:Discord:
+  - 'project:Discord'

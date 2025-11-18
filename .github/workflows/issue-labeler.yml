@@ -1,0 +1,21 @@
+# .github/workflows/issue-labeler.yml
+name: "Issue Labeler"
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply labels based on issue body
+        uses: github/issue-labeler@v3.3
+        with:
+          repo-token: ${{ github.token }}
+          configuration-path: .github/labeler.yml
+          enable-versioned-regex: 0
