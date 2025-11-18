@@ -1,86 +1,20 @@
-# .github/labeler.yml
-# Used by github/issue-labeler to auto-label issues based on Issue Form selections.
-# The dropdown values in your forms are already the label strings (e.g. "bug:texture"),
-# so we just match those exact strings in the issue body.
+Texture: [ "Texture" ]
+Recipe: [ "Recipe" ]
+Crash: [ "Crash" ]
+Quest: [ "Quest" ]
+Feature: [ "Feature" ]
+Channel: [ "Channel" ]
+Layout: [ "Layout" ]
+Supporter Benefit: [ "Supporter Benefit" ]
+Other: [ "Other" ]
 
-# -----------------------------
-# BUG SUBTYPES
-# -----------------------------
-bug:texture:
-  - 'bug:texture'
+Project: Create - Forge Frontier: [ "Project: Create - Forge Frontier" ]
+Project: Create - Industrial Skies: [ "Project: Create - Industrial Skies" ]
+Project: Landscapes Reimagined - Genesis: [ "Project: Landscapes Reimagined - Genesis" ]
 
-bug:recipe:
-  - 'bug:recipe'
+Project: Forge Frontier Core: [ "Project: Forge Frontier Core" ]
+Project: Create Bigger Storage: [ "Project: Create Bigger Storage" ]
+Project: Dreams and Desires: [ "Project: Dreams and Desires" ]
+Project: Resource Vents: [ "Project: Resource Vents" ]
 
-bug:crash:
-  - 'bug:crash'
-
-bug:quest:
-  - 'bug:quest'
-
-bug:other:
-  - 'bug:other'
-
-
-# -----------------------------
-# SUGGESTION SUBTYPES
-# -----------------------------
-suggestion:texture:
-  - 'suggestion:texture'
-
-suggestion:recipe:
-  - 'suggestion:recipe'
-
-suggestion:feature:
-  - 'suggestion:feature'
-
-suggestion:quest:
-  - 'suggestion:quest'
-
-suggestion:channel:
-  - 'suggestion:channel'
-
-suggestion:layout:
-  - 'suggestion:layout'
-
-suggestion:supporter-benefit:
-  - 'suggestion:supporter-benefit'
-
-suggestion:other:
-  - 'suggestion:other'
-
-
-# -----------------------------
-# PROJECT LABELS – MODPACKS
-# -----------------------------
-project:Create - Forge Frontier:
-  - 'project:Create - Forge Frontier'
-
-project:Create - Industrial Skies:
-  - 'project:Create - Industrial Skies'
-
-project:Landscapes Reimagined - Genesis:
-  - 'project:Landscapes Reimagined - Genesis'
-
-
-# -----------------------------
-# PROJECT LABELS – MODS
-# -----------------------------
-project:Forge Frontier Core:
-  - 'project:Forge Frontier Core'
-
-project:Create Bigger Storage:
-  - 'project:Create Bigger Storage'
-
-project:Dreams and Desires:
-  - 'project:Dreams and Desires'
-
-project:Resource Vents:
-  - 'project:Resource Vents'
-
-
-# -----------------------------
-# PROJECT LABEL – DISCORD
-# -----------------------------
-project:Discord:
-  - 'project:Discord'
+Project: Discord: [ "Project: Discord" ]

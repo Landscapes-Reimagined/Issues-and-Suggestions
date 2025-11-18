@@ -1,63 +1,44 @@
 name: "Modpack Suggestion"
-description: "Suggest changes or additions to a modpack."
+description: "Suggest additions or changes to a modpack."
 title: "[Modpack Suggestion] <short summary>"
 labels:
-  - "type:suggestion"
-  - "area:modpack"
-  - "project:Modpacks"
-  - "status:needs triage"
+  - "Type: Suggestion"
+  - "Area: Modpack"
+  - "Status: Needs Triage"
 
 body:
   - type: markdown
     attributes:
       value: |
         ## 💡 Modpack Suggestion
-        Share your idea and explain how it improves the overall experience.
 
   - type: dropdown
     id: project_label
     attributes:
-      label: Project label
-      description: Select the modpack this suggestion is for. This will be used as a label.
+      label: Project
       options:
-        - project:Create - Forge Frontier
-        - project:Create - Industrial Skies
-        - project:Landscapes Reimagined - Genesis
+        - Project: Create - Forge Frontier
+        - Project: Create - Industrial Skies
+        - Project: Landscapes Reimagined - Genesis
     validations:
       required: true
 
   - type: dropdown
-    id: suggestion_type_label
+    id: suggestion_type
     attributes:
-      label: Suggestion type label
-      description: Select the most accurate suggestion type. This will be used as a label.
+      label: Suggestion Type
       options:
-        - suggestion:texture
-        - suggestion:recipe
-        - suggestion:feature
-        - suggestion:quest
-        - suggestion:other
+        - Texture
+        - Recipe
+        - Feature
+        - Quest
+        - Other
     validations:
       required: true
 
   - type: textarea
     id: suggestion_details
     attributes:
-      label: Suggestion details
-      description: "Describe your idea and why it should be added."
-      placeholder: "What should change or be added? Why is it beneficial?"
+      label: Suggestion Details
     validations:
       required: true
-
-  - type: textarea
-    id: additional_context
-    attributes:
-      label: Additional context
-      description: "Links, examples, reference packs, screenshots, or extra notes."
-      render: text
-
-  - type: markdown
-    attributes:
-      value: |
-        ---
-        Thanks for helping shape the future of the pack! 🚀
