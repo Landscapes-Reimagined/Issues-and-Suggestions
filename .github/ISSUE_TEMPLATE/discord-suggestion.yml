@@ -1,3 +1,4 @@
+
 name: "Discord Suggestion"
 description: "Suggest improvements for the Discord server."
 title: "[Discord Suggestion] <short summary>"
@@ -16,10 +17,10 @@ body:
     attributes:
       label: Suggestion Type
       options:
-        - Channel
-        - Layout
-        - Supporter Benefit
-        - Other
+        - "Channel"
+        - "Layout"
+        - "Supporter Benefit"
+        - "Other"
     validations:
       required: true
 

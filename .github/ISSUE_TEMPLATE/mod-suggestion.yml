@@ -1,3 +1,4 @@
+
 name: "Mod Suggestion"
 description: "Suggest changes or additions to a specific mod."
 title: "[Mod Suggestion] <mod name> - <short summary>"
@@ -16,10 +17,10 @@ body:
     attributes:
       label: Mod
       options:
-        - Project: Forge Frontier Core
-        - Project: Create Bigger Storage
-        - Project: Dreams and Desires
-        - Project: Resource Vents
+        - "Project: Forge Frontier Core"
+        - "Project: Create Bigger Storage"
+        - "Project: Dreams and Desires"
+        - "Project: Resource Vents"
     validations:
       required: true
 
@@ -28,10 +29,10 @@ body:
     attributes:
       label: Suggestion Type
       options:
-        - Texture
-        - Recipe
-        - Feature
-        - Other
+        - "Texture"
+        - "Recipe"
+        - "Feature"
+        - "Other"
     validations:
       required: true
 

@@ -1,3 +1,4 @@
+
 name: "Modpack Issue"
 description: "Report a problem with a modpack."
 title: "[Modpack Issue] <short summary>"
@@ -16,9 +17,9 @@ body:
     attributes:
       label: Project
       options:
-        - Project: Create - Forge Frontier
-        - Project: Create - Industrial Skies
-        - Project: Landscapes Reimagined - Genesis
+        - "Project: Create - Forge Frontier"
+        - "Project: Create - Industrial Skies"
+        - "Project: Landscapes Reimagined - Genesis"
     validations:
       required: true
 
@@ -27,11 +28,11 @@ body:
     attributes:
       label: Issue Subtype
       options:
-        - Texture
-        - Recipe
-        - Crash
-        - Quest
-        - Other
+        - "Texture"
+        - "Recipe"
+        - "Crash"
+        - "Quest"
+        - "Other"
     validations:
       required: true
 

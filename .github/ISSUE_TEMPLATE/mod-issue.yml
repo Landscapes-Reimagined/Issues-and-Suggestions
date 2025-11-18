@@ -1,3 +1,4 @@
+
 name: "Mod Issue"
 description: "Report a problem with a specific mod."
 title: "[Mod Issue] <mod name> - <short summary>"
@@ -16,10 +17,10 @@ body:
     attributes:
       label: Mod
       options:
-        - Project: Forge Frontier Core
-        - Project: Create Bigger Storage
-        - Project: Dreams and Desires
-        - Project: Resource Vents
+        - "Project: Forge Frontier Core"
+        - "Project: Create Bigger Storage"
+        - "Project: Dreams and Desires"
+        - "Project: Resource Vents"
     validations:
       required: true
 
@@ -28,10 +29,10 @@ body:
     attributes:
       label: Issue Subtype
       options:
-        - Texture
-        - Recipe
-        - Crash
-        - Other
+        - "Texture"
+        - "Recipe"
+        - "Crash"
+        - "Other"
     validations:
       required: true
 
