@@ -1,0 +1,63 @@
+name: "Mod Suggestion"
+description: "Suggest changes or additions related to a specific mod."
+title: "[Mod Suggestion] <mod name> - <short summary>"
+labels:
+  - "type:suggestion"
+  - "area:mod"
+  - "project:Mods"
+  - "status:needs triage"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✨ Mod Suggestion
+        Suggest tweaks or features for a specific mod in the pack.
+
+  - type: dropdown
+    id: project_label
+    attributes:
+      label: Mod project label
+      description: Select which mod this suggestion is about. This will be used as a label.
+      options:
+        - project:Forge Frontier Core
+        - project:Create Bigger Storage
+        - project:Dreams and Desires
+        - project:Resource Vents
+    validations:
+      required: true
+
+  - type: dropdown
+    id: suggestion_type_label
+    attributes:
+      label: Suggestion type label
+      description: Select the most accurate suggestion type. This will be used as a label.
+      options:
+        - suggestion:texture
+        - suggestion:recipe
+        - suggestion:feature
+        - suggestion:other
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion_details
+    attributes:
+      label: Suggestion details
+      description: "What should change or be added, and why?"
+      placeholder: "Explain the idea and the problem it solves or the value it adds."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: "Links, reference images, or other details."
+      render: text
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        Great ideas help all players – thanks for contributing! 🙌

@@ -1,0 +1,93 @@
+name: "Modpack Issue"
+description: "Report a problem with a modpack (textures, recipes, crashes, quests, etc.)."
+title: "[Modpack Issue] <short summary>"
+labels:
+  - "type:bug"
+  - "area:modpack"
+  - "project:Modpacks"
+  - "status:needs triage"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🧰 Modpack Issue Report
+        Please fill out all required fields so we can reproduce and fix the issue quickly.
+
+        **Tip:** Attach logs and screenshots whenever possible – it helps a lot.
+
+  - type: dropdown
+    id: project_label
+    attributes:
+      label: Project label
+      description: Select the modpack this issue belongs to. This will be used as a label.
+      options:
+        - project:Create - Forge Frontier
+        - project:Create - Industrial Skies
+        - project:Landscapes Reimagined - Genesis
+    validations:
+      required: true
+
+  - type: dropdown
+    id: bug_type_label
+    attributes:
+      label: Bug type label
+      description: Select the most accurate bug type. This will be used as a label.
+      options:
+        - bug:texture
+        - bug:recipe
+        - bug:crash
+        - bug:quest
+        - bug:other
+    validations:
+      required: true
+
+  - type: input
+    id: modpack_version
+    attributes:
+      label: Modpack version
+      placeholder: "e.g. 2.5.3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        Clearly describe what happened and what you expected to happen.
+      placeholder: "Describe the issue in as much detail as possible."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to reproduce
+      description: "List the steps needed to reproduce the issue."
+      placeholder: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / crash report
+      description: "Paste a link to your crash report or logs (e.g. mclo.gs, pastebin, gist)."
+      render: text
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: "If applicable, add screenshots or a short video link."
+      render: text
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        Thanks for taking the time to report this. 🧡
