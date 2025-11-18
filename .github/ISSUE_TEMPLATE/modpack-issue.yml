@@ -1,0 +1,85 @@
+name: "Modpack Issue"
+description: "Report a problem with the modpack (textures, recipes, crashes, quests, etc.)."
+title: "[Modpack Issue] <short summary>"
+labels: ["type:bug", "area:modpack", "project:Modpacks", "status:needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🧰 Modpack Issue Report
+        Please fill out all required fields so we can reproduce and fix the issue as quickly as possible.
+
+  - type: dropdown
+    id: modpack_name
+    attributes:
+      label: Which modpack?
+      options:
+        - Create - Forge Frontier
+        - Create - Industrial Skies
+        - Landscapes Reimagined - Genesis
+    validations:
+      required: true
+
+  - type: dropdown
+    id: modpack_issue_type
+    attributes:
+      label: Issue type
+      description: What kind of issue is this?
+      options:
+        - Texture issue
+        - Recipe issue
+        - Crashing issue
+        - Quest issue
+        - Other issue
+    validations:
+      required: true
+
+  - type: input
+    id: modpack_version
+    attributes:
+      label: Modpack version
+      placeholder: "e.g. 2.5.3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        Clearly describe the issue and what you expected to happen.
+      placeholder: "What happened, and what did you expect to happen?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to reproduce
+      description: "List the steps needed to reproduce the issue."
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / crash report
+      description: "Paste a link to your crash report or logs (e.g. gist, mclo.gs, pastebin)."
+      render: text
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: "If applicable, add screenshots to help explain your problem."
+      render: text
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        Thank you for helping improve the modpack! 🧡

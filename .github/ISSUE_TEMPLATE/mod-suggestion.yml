@@ -1,0 +1,54 @@
+name: "Mod Suggestion"
+description: "Suggest changes or additions related to a specific mod."
+title: "[Mod Suggestion] <mod name> - <short summary>"
+labels: ["type:suggestion", "area:mod", "project:Mods", "status:needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✨ Mod Suggestion
+        Suggest tweaks or features for a specific mod in the pack.
+
+  - type: dropdown
+    id: mod_name
+    attributes:
+      label: Which mod?
+      options:
+        - Create - Forge Frontier Core
+        - Create: Bigger Storage (Updated to Create 6.0)
+        - Create: Dreams and Desires (Updated to Create 6.0)
+        - Create: Resource Vents
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mod_suggestion_type
+    attributes:
+      label: Suggestion type
+      options:
+        - Texture suggestion
+        - Recipe suggestion
+        - Feature suggestion
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion_details
+    attributes:
+      label: Suggestion details
+      description: "What should change or be added, and why?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: "Links, reference images, or other details."
+      render: text
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        Great ideas help all players – thanks for contributing! 🙌

@@ -1,0 +1,44 @@
+name: "Discord Suggestion"
+description: "Suggest improvements for the Discord server."
+title: "[Discord Suggestion] <short summary>"
+labels: ["type:suggestion", "area:discord", "project:Discord", "status:needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🗨️ Discord Suggestion
+        Help us improve the community Discord by suggesting changes or new ideas.
+
+  - type: dropdown
+    id: discord_suggestion_type
+    attributes:
+      label: Suggestion type
+      options:
+        - Channel suggestion
+        - Layout suggestion
+        - Supporter benefit suggestion
+        - Other suggestion
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion_details
+    attributes:
+      label: Suggestion details
+      description: "Describe your suggestion and how it improves the Discord."
+      placeholder: "What should be added, removed, or changed?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: "Examples, screenshots, or other notes."
+      render: text
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        Thanks for helping the community feel even better to be a part of. 💬

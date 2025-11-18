@@ -1,0 +1,73 @@
+name: "Mod Issue"
+description: "Report an issue related to a specific mod."
+title: "[Mod Issue] <mod name> - <short summary>"
+labels: ["type:bug", "area:mod", "project:Mods", "status:needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🧩 Mod Issue Report
+        Use this form to report issues with a specific mod included in the pack.
+
+  - type: dropdown
+    id: mod_name
+    attributes:
+      label: Which mod?
+      options:
+        - Create - Forge Frontier Core
+        - Create: Bigger Storage (Updated to Create 6.0)
+        - Create: Dreams and Desires (Updated to Create 6.0)
+        - Create: Resource Vents
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mod_issue_type
+    attributes:
+      label: Issue type
+      options:
+        - Texture issue
+        - Recipe issue
+        - Crashing issue
+        - Other issue
+    validations:
+      required: true
+
+  - type: input
+    id: modpack_version
+    attributes:
+      label: Modpack version (if relevant)
+      placeholder: "e.g. 2.5.3"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Describe the issue clearly and include any important details."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to reproduce
+      description: "List the steps to reproduce the issue."
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / crash report
+      description: "Paste a link to logs or crash reports."
+      render: text
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        The more detail you provide, the faster we can track this down. 🕵️
