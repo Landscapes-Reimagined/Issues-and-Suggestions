@@ -6,6 +6,7 @@ labels:
   - "area:discord"
   - "project:Discord"
   - "status:needs triage"
+
 body:
   - type: markdown
     attributes:
@@ -14,14 +15,15 @@ body:
         Help us improve the community Discord by suggesting changes or new ideas.
 
   - type: dropdown
-    id: discord_suggestion_type
+    id: suggestion_type_label
     attributes:
-      label: Suggestion category
+      label: Suggestion type label
+      description: Select the most accurate suggestion type. This will be used as a label.
       options:
-        - Channel suggestion
-        - Layout suggestion
-        - Supporter benefit suggestion
-        - Other suggestion
+        - suggestion:channel
+        - suggestion:layout
+        - suggestion:supporter-benefit
+        - suggestion:other
     validations:
       required: true
 

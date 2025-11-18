@@ -6,6 +6,7 @@ labels:
   - "area:modpack"
   - "project:Modpacks"
   - "status:needs triage"
+
 body:
   - type: markdown
     attributes:
@@ -16,27 +17,28 @@ body:
         **Tip:** Attach logs and screenshots whenever possible – it helps a lot.
 
   - type: dropdown
-    id: modpack_name
+    id: project_label
     attributes:
-      label: Which modpack?
+      label: Project label
+      description: Select the modpack this issue belongs to. This will be used as a label.
       options:
-        - Create - Forge Frontier
-        - Create - Industrial Skies
-        - Landscapes Reimagined - Genesis
+        - project:Create - Forge Frontier
+        - project:Create - Industrial Skies
+        - project:Landscapes Reimagined - Genesis
     validations:
       required: true
 
   - type: dropdown
-    id: modpack_issue_type
+    id: bug_type_label
     attributes:
-      label: Issue category
-      description: What kind of issue is this?
+      label: Bug type label
+      description: Select the most accurate bug type. This will be used as a label.
       options:
-        - Texture issue
-        - Recipe issue
-        - Crashing issue
-        - Quest issue
-        - Other issue
+        - bug:texture
+        - bug:recipe
+        - bug:crash
+        - bug:quest
+        - bug:other
     validations:
       required: true
 

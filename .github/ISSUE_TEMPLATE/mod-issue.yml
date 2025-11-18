@@ -6,6 +6,7 @@ labels:
   - "area:mod"
   - "project:Mods"
   - "status:needs triage"
+
 body:
   - type: markdown
     attributes:
@@ -14,26 +15,28 @@ body:
         Use this form to report issues with a specific mod included in the pack.
 
   - type: dropdown
-    id: mod_name
+    id: project_label
     attributes:
-      label: Which mod?
+      label: Mod project label
+      description: Select which mod this issue is about. This will be used as a label.
       options:
-        - Create - Forge Frontier Core
-        - Create: Bigger Storage (Updated to Create 6.0)
-        - Create: Dreams and Desires (Updated to Create 6.0)
-        - Create: Resource Vents
+        - project:Forge Frontier Core
+        - project:Create Bigger Storage
+        - project:Dreams and Desires
+        - project:Resource Vents
     validations:
       required: true
 
   - type: dropdown
-    id: mod_issue_type
+    id: bug_type_label
     attributes:
-      label: Issue category
+      label: Bug type label
+      description: Select the most accurate bug type. This will be used as a label.
       options:
-        - Texture issue
-        - Recipe issue
-        - Crashing issue
-        - Other issue
+        - bug:texture
+        - bug:recipe
+        - bug:crash
+        - bug:other
     validations:
       required: true
 

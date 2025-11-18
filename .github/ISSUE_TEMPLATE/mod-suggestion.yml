@@ -6,6 +6,7 @@ labels:
   - "area:mod"
   - "project:Mods"
   - "status:needs triage"
+
 body:
   - type: markdown
     attributes:
@@ -14,25 +15,28 @@ body:
         Suggest tweaks or features for a specific mod in the pack.
 
   - type: dropdown
-    id: mod_name
+    id: project_label
     attributes:
-      label: Which mod?
+      label: Mod project label
+      description: Select which mod this suggestion is about. This will be used as a label.
       options:
-        - Create - Forge Frontier Core
-        - Create: Bigger Storage (Updated to Create 6.0)
-        - Create: Dreams and Desires (Updated to Create 6.0)
-        - Create: Resource Vents
+        - project:Forge Frontier Core
+        - project:Create Bigger Storage
+        - project:Dreams and Desires
+        - project:Resource Vents
     validations:
       required: true
 
   - type: dropdown
-    id: mod_suggestion_type
+    id: suggestion_type_label
     attributes:
-      label: Suggestion category
+      label: Suggestion type label
+      description: Select the most accurate suggestion type. This will be used as a label.
       options:
-        - Texture suggestion
-        - Recipe suggestion
-        - Feature suggestion
+        - suggestion:texture
+        - suggestion:recipe
+        - suggestion:feature
+        - suggestion:other
     validations:
       required: true
 
