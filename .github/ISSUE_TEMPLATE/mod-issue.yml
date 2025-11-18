@@ -1,7 +1,11 @@
 name: "Mod Issue"
-description: "Report an issue related to a specific mod."
+description: "Report an issue related to a specific mod included in a pack."
 title: "[Mod Issue] <mod name> - <short summary>"
-labels: ["type:bug", "area:mod", "project:Mods", "status:needs triage"]
+labels:
+  - "type:bug"
+  - "area:mod"
+  - "project:Mods"
+  - "status:needs triage"
 body:
   - type: markdown
     attributes:
@@ -24,7 +28,7 @@ body:
   - type: dropdown
     id: mod_issue_type
     attributes:
-      label: Issue type
+      label: Issue category
       options:
         - Texture issue
         - Recipe issue
@@ -44,6 +48,7 @@ body:
     attributes:
       label: Description
       description: "Describe the issue clearly and include any important details."
+      placeholder: "Explain what is going wrong and what you expected instead."
     validations:
       required: true
 
@@ -53,9 +58,9 @@ body:
       label: Steps to reproduce
       description: "List the steps to reproduce the issue."
       placeholder: |
-        1.
-        2.
-        3.
+        1. 
+        2. 
+        3. 
     validations:
       required: true
 

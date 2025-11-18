@@ -1,7 +1,11 @@
 name: "Discord Suggestion"
 description: "Suggest improvements for the Discord server."
 title: "[Discord Suggestion] <short summary>"
-labels: ["type:suggestion", "area:discord", "project:Discord", "status:needs triage"]
+labels:
+  - "type:suggestion"
+  - "area:discord"
+  - "project:Discord"
+  - "status:needs triage"
 body:
   - type: markdown
     attributes:
@@ -12,7 +16,7 @@ body:
   - type: dropdown
     id: discord_suggestion_type
     attributes:
-      label: Suggestion type
+      label: Suggestion category
       options:
         - Channel suggestion
         - Layout suggestion

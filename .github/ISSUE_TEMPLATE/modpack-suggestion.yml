@@ -1,7 +1,11 @@
 name: "Modpack Suggestion"
-description: "Suggest changes or additions to the modpack."
+description: "Suggest changes or additions to a modpack."
 title: "[Modpack Suggestion] <short summary>"
-labels: ["type:suggestion", "area:modpack", "project:Modpacks", "status:needs triage"]
+labels:
+  - "type:suggestion"
+  - "area:modpack"
+  - "project:Modpacks"
+  - "status:needs triage"
 body:
   - type: markdown
     attributes:
@@ -23,7 +27,7 @@ body:
   - type: dropdown
     id: modpack_suggestion_type
     attributes:
-      label: Suggestion type
+      label: Suggestion category
       options:
         - Texture suggestion
         - Recipe suggestion
@@ -45,7 +49,7 @@ body:
     id: additional_context
     attributes:
       label: Additional context
-      description: "Links, examples, reference packs, or extra notes."
+      description: "Links, examples, reference packs, screenshots, or extra notes."
       render: text
 
   - type: markdown
