@@ -1,5 +1,5 @@
 <div align="center">
-  <img src=".github/assets/logo.png" width="200" alt="Landscapes Reimagined Logo"/>
+  <img src="./logo.png" width="200" alt="Landscapes Reimagined Logo"/>
   <h1>Landscapes Reimagined – Issues & Suggestions</h1>
   <p>Submit issues, bugs, and suggestions for the Landscapes Reimagined ecosystem.</p>
 </div>
