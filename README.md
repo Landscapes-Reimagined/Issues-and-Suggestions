@@ -1,142 +1,106 @@
-<div align="center">
-  <img src="/mnt/data/New_Landscapes_Reimagined_Logo_Compressed.png" width="200" alt="Landscapes Reimagined Logo"/>
 
+<div align="center">
+  <img src="./logo.png" width="200" alt="Landscapes Reimagined Logo"/>
   <h1>Landscapes Reimagined – Issues & Suggestions</h1>
-  <p>A dedicated hub for reporting issues, submitting suggestions, and supporting the continued development of the Landscapes Reimagined modpack family.</p>
+  <p>Submit issues, bugs, and suggestions for the Landscapes Reimagined ecosystem.</p>
 </div>
 
 ---
 
 # Overview
-
-This repository houses all **bug reports**, **feature suggestions**, and **feedback** related to:
-
-- **Landscapes Reimagined** modpacks  
-- Connected and maintained mods (Forge Frontier Core, Create Bigger Storage, Dreams and Desires, Resource Vents)  
-- The project’s **Discord server**
-
-Submitting issues here keeps everything organized, trackable, and easy for the development team to review.
+This repository is the official hub for:
+- Landscapes Reimagined modpacks
+- Connected/maintained mods
+- Discord server feedback
 
 ---
 
 # When to Create an Issue
+Use this repository when encountering:
+- Gameplay or technical bugs  
+- Crashes  
+- Recipe, texture, or quest problems  
+- Mod-specific issues  
+- Worldgen or progression inconsistencies  
 
-Submit an issue when you encounter:
-
-- Gameplay or technical problems  
-- Mod-specific bugs  
-- Crashes or reproducible errors  
-- Broken textures, recipes, or quests  
-- Progression or world generation issues  
-- Any other defect affecting gameplay or stability  
-
-If you have an idea that could improve the experience, create a **suggestion** instead.
+For ideas or improvements, submit a **suggestion** instead.
 
 ---
 
 # Submitting an Issue or Suggestion
+Click **New Issue** and select the appropriate form:
 
-This repository uses **GitHub Issue Forms**, allowing you to submit structured reports quickly and clearly.
-
-Click **New Issue** and choose the form that fits your report:
-
----
-
-## 1. Modpack Issue
-
-Use this for issues affecting the entire modpack.
-
-You will be asked for:
-
-- The modpack in use  
-- The issue subtype (Texture, Recipe, Crash, Quest, Other)  
-- Modpack version  
-- A clear description of the issue  
-- Steps to reproduce  
-- Optional logs or screenshots  
-
----
-
-## 2. Modpack Suggestion
-
-Use this for proposing improvements such as:
-
-- Texture enhancements  
-- Recipe adjustments  
-- Quest improvements  
-- New features  
-- General quality-of-life ideas  
-
-The form will request:
-
-- The modpack your suggestion applies to  
-- Type of suggestion  
-- A detailed explanation  
-- Optional context or references  
-
----
-
-## 3. Mod Issue
-
-Use this when the issue belongs to a **specific mod** rather than the entire pack.
-
-The form includes:
-
-- Which mod is affected  
-- Category of issue (Texture, Recipe, Crash, Other)  
+## Modpack Issue
+Report problems affecting an entire modpack.  
+You will select:
+- Project  
+- Issue subtype  
+- Version  
 - Description  
 - Steps to reproduce  
-- Optional logs or screenshots  
+
+## Modpack Suggestion
+Suggest improvements for:
+- Textures  
+- Recipes  
+- Features  
+- Quests  
+- General QOL  
+
+## Mod Issue
+Report issues tied to a specific mod.
+
+## Mod Suggestion
+Suggest new features or improvements for a mod.
+
+## Discord Suggestion
+Suggest improvements to:
+- Channels  
+- Layout  
+- Supporter benefits  
+- Organizational structure  
 
 ---
 
-## 4. Mod Suggestion
+# Label Color Scheme
 
-Use this to suggest features or improvements for individual mods.
+## Type Labels
+```
+Type: Bug — #D73A4A
+Type: Suggestion — #1F6FEB
+```
 
-You will provide:
+## Area Labels
+```
+Area: Modpack — #2EA043
+Area: Mod — #2EA043
+Area: Discord — #2EA043
+```
 
-- Which mod your idea applies to  
-- Suggestion type  
-- Detailed explanation  
-- Optional supporting material  
+## Project Labels
+(All use #A371F7)
 
----
+## Subtype Labels
+```
+Texture — #7DA0C8
+Recipe — #A68A6D
+Crash — #C98A4B
+Quest — #7A9E6C
+Feature — #A39BD1
+Channel — #6F7EAA
+Layout — #8D8276
+Supporter Benefit — #C9B458
+Other — #6E7781
+```
 
-## 5. Discord Suggestion
-
-Use this form to suggest enhancements to the Discord server, including:
-
-- Channel structure  
-- Server layout  
-- Supporter perks  
-- General organizational improvements  
-
----
-
-# Writing an Effective Report
-
-To help ensure quick and accurate responses:
-
-## For Issues
-- Verify you are using the latest version  
-- Provide a detailed description  
-- Include steps to reproduce the issue  
-- Attach relevant logs for crashes  
-- Provide screenshots for visual issues  
-- Explain expected behavior vs. actual behavior  
-
-## For Suggestions
-- Clearly describe your idea  
-- Explain how it benefits gameplay or usability  
-- Provide context or references if needed  
-- Consider how it fits the modpack’s design direction  
+## Status Labels
+```
+Status: Needs Triage — #FBCA04
+Status: In Progress — #F9D900
+Status: Blocked — #B60205
+```
 
 ---
 
 # Thank You
-
-Your reports and suggestions directly help improve the **Landscapes Reimagined** experience.  
-We appreciate every contribution and review all submissions carefully.
-
-If you need assistance or want to discuss something directly, please join the project’s Discord server linked on the modpack’s official page.
+Your reports and suggestions directly help improve the Landscapes Reimagined experience.
