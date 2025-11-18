@@ -1,5 +1,5 @@
 name: "Mod Suggestion"
-description: "Suggest additions or changes to a specific mod."
+description: "Suggest changes or additions to a specific mod."
 title: "[Mod Suggestion] <mod name> - <short summary>"
 labels:
   - "Type: Suggestion"
@@ -9,7 +9,7 @@ labels:
 body:
   - type: markdown
     attributes:
-      value: "## ✨ Mod Suggestion"
+      value: "## Mod Suggestion"
 
   - type: dropdown
     id: project_label

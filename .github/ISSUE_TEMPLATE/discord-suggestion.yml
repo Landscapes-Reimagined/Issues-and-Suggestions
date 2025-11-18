@@ -1,5 +1,5 @@
 name: "Discord Suggestion"
-description: "Suggest improvements for the community Discord."
+description: "Suggest improvements for the Discord server."
 title: "[Discord Suggestion] <short summary>"
 labels:
   - "Type: Suggestion"
@@ -9,7 +9,7 @@ labels:
 body:
   - type: markdown
     attributes:
-      value: "## 🗨️ Discord Suggestion"
+      value: "## Discord Suggestion"
 
   - type: dropdown
     id: suggestion_type

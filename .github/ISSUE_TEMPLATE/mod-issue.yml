@@ -9,7 +9,7 @@ labels:
 body:
   - type: markdown
     attributes:
-      value: "## 🧩 Mod Issue Report"
+      value: "## Mod Issue Report"
 
   - type: dropdown
     id: project_label

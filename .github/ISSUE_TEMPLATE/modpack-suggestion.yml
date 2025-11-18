@@ -9,8 +9,7 @@ labels:
 body:
   - type: markdown
     attributes:
-      value: |
-        ## 💡 Modpack Suggestion
+      value: "## Modpack Suggestion"
 
   - type: dropdown
     id: project_label

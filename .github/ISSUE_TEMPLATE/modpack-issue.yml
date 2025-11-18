@@ -9,8 +9,7 @@ labels:
 body:
   - type: markdown
     attributes:
-      value: |
-        ## 🧰 Modpack Issue Report
+      value: "## Modpack Issue Report"
 
   - type: dropdown
     id: project_label
