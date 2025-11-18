@@ -1,18 +1,15 @@
 name: "Mod Issue"
-description: "Report a problem with a specific mod."
+description: "Report a bug related to a specific mod."
 title: "[Mod Issue] <mod name> - <short summary>"
 labels:
   - "Type: Bug"
   - "Area: Mod"
   - "Status: Needs Triage"
 body:
-  - type: markdown
-    attributes:
-      value: "## Mod Issue Report"
   - type: dropdown
-    id: project_label
+    id: mod_project
     attributes:
-      label: Mod
+      label: Which Mod?
       options:
         - "Project: Forge Frontier Core"
         - "Project: Create Bigger Storage"
@@ -20,18 +17,39 @@ body:
         - "Project: Resource Vents"
     validations:
       required: true
+
   - type: dropdown
     id: subtype_label
     attributes:
-      label: Issue Subtype
+      label: Issue Type
       options:
+        - "Crash"
         - "Texture"
         - "Recipe"
-        - "Crash"
         - "Other"
     validations:
       required: true
+
   - type: textarea
     id: description
     attributes:
-      label: Description
+      label: Describe the Issue
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: "1. ...\n2. ...\n3. ..."
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Crash Report / Logs
+      description: "Paste logs or upload them to https://mclo.gs/"
+      render: bash
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: "Attach any relevant images."

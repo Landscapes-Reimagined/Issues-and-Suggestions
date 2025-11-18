@@ -1,41 +1,62 @@
 name: "Modpack Issue"
-description: "Report a problem with a modpack."
+description: "Report a problem affecting an entire modpack."
 title: "[Modpack Issue] <short summary>"
 labels:
   - "Type: Bug"
   - "Area: Modpack"
   - "Status: Needs Triage"
 body:
-  - type: markdown
-    attributes:
-      value: "## Modpack Issue Report"
   - type: dropdown
     id: project_label
     attributes:
-      label: Project
+      label: Which Modpack?
       options:
         - "Project: Create - Forge Frontier"
         - "Project: Create - Industrial Skies"
         - "Project: Landscapes Reimagined - Genesis"
     validations:
       required: true
+
   - type: dropdown
     id: subtype_label
     attributes:
-      label: Issue Subtype
+      label: Issue Type
       options:
+        - "Crash"
         - "Texture"
         - "Recipe"
-        - "Crash"
         - "Quest"
         - "Other"
     validations:
       required: true
+
   - type: input
     id: version
     attributes:
       label: Modpack Version
+      placeholder: "e.g., 2.5.3"
+
   - type: textarea
     id: description
     attributes:
-      label: Description
+      label: Describe the Issue
+      description: "Clearly explain what is happening."
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: "1. ...\n2. ...\n3. ..."
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Crash Report / Logs
+      description: "Paste logs or upload them to a service like https://mclo.gs/"
+      render: bash
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: "Drag and drop images here if applicable."
