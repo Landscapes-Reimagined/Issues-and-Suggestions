@@ -12,8 +12,8 @@ body:
       label: Which Mod?
       options:
         - "Project: Forge Frontier Core"
-        - "Project: Create Bigger Storage"
-        - "Project: Dreams and Desires"
+        - "Project: Create Bigger Storage Compat"
+        - "Project: Dreams and Desires Compat"
         - "Project: Resource Vents"
     validations:
       required: true
