@@ -28,6 +28,7 @@ body:
         - "Recipe"
         - "Feature"
         - "Quest"
+        - "Mod"
         - "Other"
     validations:
       required: true
