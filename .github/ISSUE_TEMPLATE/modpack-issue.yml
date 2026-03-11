@@ -26,6 +26,7 @@ body:
         - "Texture"
         - "Recipe"
         - "Quest"
+        - "Mod"
         - "Other"
     validations:
       required: true
