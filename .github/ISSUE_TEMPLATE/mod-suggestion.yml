@@ -1,5 +1,5 @@
-name: "Mod Suggestion"
-description: "Suggest changes to a mod."
+name: "Mod Suggestion - Outside of our Packs"
+description: "Suggest changes to a mod outside of our Modpacks."
 title: "[Mod Suggestion] <mod name> - <short summary>"
 labels:
   - "Type: Suggestion"

@@ -1,5 +1,5 @@
-name: "Mod Issue"
-description: "Report a bug related to a specific mod."
+name: "Mod Issue - Outside of our Packs"
+description: "Report a bug related to a specific mod outside of our Modpacks."
 title: "[Mod Issue] <mod name> - <short summary>"
 labels:
   - "Type: Bug"
