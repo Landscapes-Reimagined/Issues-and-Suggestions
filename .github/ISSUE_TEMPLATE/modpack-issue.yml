@@ -1,5 +1,5 @@
 name: "Modpack Issue ⭐"
-description: "Report a problem affecting an entire modpack."
+description: "Report a problem affecting anything within our modpacks."
 title: "[Modpack Issue] <short summary>"
 labels:
   - "Type: Bug"
